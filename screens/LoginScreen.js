@@ -57,7 +57,7 @@ const LoginScreen = ({ history }) => {
         const json = await res.json();
 
         try {
-          const jsonValue = JSON.stringify(value);
+          const jsonValue = JSON.stringify(json);
           await AsyncStorage.setItem("@session", jsonValue);
         } catch (e) {
           console.log(`Error storing session to AsyncStorage: \n${e}`);

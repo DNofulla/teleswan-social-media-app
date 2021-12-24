@@ -7,7 +7,7 @@ const FeedScreen = ({ history }) => {
   const handleLogout = async () => {
     try {
       let res = await fetch("http://192.168.1.148:8080/users/logout", {
-        method: "POST",
+        method: "DELETE",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
